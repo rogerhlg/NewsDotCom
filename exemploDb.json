@@ -1,0 +1,28 @@
+{
+  "banco": {
+    "nome": [
+      "yasmina",
+      "roger"
+    ]
+  },
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Maria",
+      "endereco": {
+        "id": 1,
+        "rua": "Rua x",
+        "num": "100"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Pedro",
+      "endereco": {
+        "id": 1,
+        "rua": "Rua y",
+        "num": "91"
+      }
+    }
+  ]
+}
