@@ -1,0 +1,28 @@
+    .maisvistastitulo {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 36px;
+        color: #B72E09;
+        /* padding-left: 23px; */
+    }
+    
+    .maisvistasnumero {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 36px;
+        color: #252928;
+        padding: 10px;
+        /* padding-left: 30px; */
+    }
+    
+    .maisvistas {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        padding-bottom: 29px;
+        padding-right: 5px;
+        border-bottom: 1px solid #B5B192;
+        border-style: dashed;
+    }

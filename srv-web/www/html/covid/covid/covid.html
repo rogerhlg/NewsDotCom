@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>Covid-19</title>
+</head>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img/covid/coronavirus-covid-20.jpg" style="width:100%; border-radius:8px;">
+            <div class="text">Covid-19</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./imagens/coronavirus-covid-22.jpg" style="width:100%;  border-radius:8px;">
+            <div class="text">Covid-19</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./imagens/coronavirus-covid-21.jpg" style="width:100%;  border-radius:8px;">
+            <div class="text">Covid-19</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <h3 class="textcovidtitulo">O que é COVID-19</h3>
+    <p class="textcovid">
+        A Covid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada transmissibilidade e de distribuição global. O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado broncoalveolar obtidas de
+        pacientes com pneumonia de causa desconhecida na cidade de Wuhan, província de Hubei, China, em dezembro de 2019. Pertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos. Os coronavírus
+        são uma grande família de vírus comuns em muitas espécies diferentes de animais, incluindo o homem, camelos, gado, gatos e morcegos. Raramente os coronavírus de animais podem infectar pessoas e depois se espalhar entre seres humanos como já ocorreu
+        com o MERS-CoV e o SARS-CoV-2. Até o momento, não foi definido o reservatório silvestre do SARS-CoV-2.
+    </p>
+
+    <h3 class="textorientacaotitulo">Orientações da OMS para prevenção contra a COVID-19</h3>
+    <ul class="textorientacao">
+        <li>   <b> - </b>Lave as mãos com água e sabão ou higienizador à base de álcool para matar vírus que podem estar nas suas mãos.</li>
+        <li>   <b> - </b> Mantenha pelo menos 1 metro de distância entre você e qualquer pessoa que esteja tossindo ou espirrando. Quando alguém tosse ou espirra, pulveriza pequenas gotas líquidas do nariz ou da boca, que podem conter vírus. Se você estiver muito próximo,
+            poderá inspirar as gotículas – inclusive do vírus da COVID-19 se a pessoa que tossir tiver a doença.</li>
+        <li>   <b> - </b> Evite tocar nos olhos, nariz e boca. As mãos tocam muitas superfícies e podem ser infectadas por vírus. Uma vez contaminadas, as mãos podem transferir o vírus para os olhos, nariz ou boca. A partir daí, o vírus pode entrar no corpo da pessoa e
+            deixá-la doente.</li>
+        <li> &nbsp; <b> - </b>Certifique-se de que você e as pessoas ao seu redor seguem uma boa higiene respiratória. Isso significa cobrir a boca e o nariz com a parte interna do cotovelo ou lenço quando tossir ou espirrar (em seguida, descarte o lenço usado imediatamente).
+            Gotículas espalham vírus. Ao seguir uma boa higiene respiratória, você protege as pessoas ao seu redor contra vírus responsáveis por resfriado, gripe e COVID-19.</li>
+        <li> &nbsp;  <b> - </b>Fique em casa se não se sentir bem. Se você tiver febre, tosse e dificuldade em respirar, procure atendimento médico. Siga as instruções da sua autoridade sanitária nacional ou local, porque elas sempre terão as informações mais atualizadas sobre
+            a situação em sua área.</li>
+        <li>  &nbsp;  <b> - </b>Pessoas doentes devem adiar ou evitar viajar para as áreas afetadas por coronavírus. Áreas afetadas são países, áreas, províncias ou cidades onde há transmissão contínua – não áreas com apenas casos importados.</li>
+        <li> &nbsp;  <b> - </b>Os viajantes que retornam das áreas afetadas devem monitorar seus sintomas por 14 dias e seguir os protocolos nacionais dos países receptores; e se ocorrerem sintomas, devem entrar em contato com um médico e informar sobre o histórico de viagem
+            e os sintomas.</li>
+    </ul>
+
+    <h3 class="titulomapa">Mapa de casos por continente</h3>
+
+
+
+    <ul class="legenda">
+
+        <li><a style="background-color: rgb(245, 245, 81);" href="#africa">&Aacute;frica</a></li>
+        <li><a style="background-color: rgb(4, 231, 4);" href="#america">Am&eacute;rica</a></li>
+        <li><a style="background-color: rgb(255, 72, 72);" href="#asia">Asia</a></li>
+        <li><a style="background-color: red;" href="#europa">Europa</a></li>
+        <li><a style="background-color:rgb(197, 23, 119)" href="#oceania">Oceania</a></li>
+    </ul>
+    </div>
+
+    <ul class="continentes">
+        <li id="america"><a href="#america" title="area da america">América</a><span>Casos: 58.250.000</span></li>
+        <li id="europa">
+            <a href="#europa"></a><span>Casos: 41.323.000</span></li>
+        <li id="asia">
+            <a href="#asia"></a><span> Casos: 30.675.000</span></li>
+        <li id="africa">
+            <a href="#africa"></a><span>Casos: 4.317.900</span></li>
+        <li id="oceania">
+            <a href="#oceania"></a><span>Casos: 58.600</span></li>
+    </ul>
+    <h3 class="titulotabela">Dados do Covid-19 no mundo</h3>
+
+    <table class="tabeladados" width="545">
+        <tr>
+            <td width="101" height="40">Total de mortes</td>
+            <td width="113">2.920.000</td>
+        </tr>
+        <tr>
+            <td height="40">Total de infectados</td>
+            <td>135.000.000</td>
+        </tr>
+        <tr>
+            <td height="40">Recuperados</td>
+            <td>79.800.000</td>
+        </tr>
+        <tr>
+            <td height="40">Vacinados</td>
+            <td>980.000.000</td>
+        </tr>
+    </table>
+
+
+
+
+</div>
+
+    <div style="position:fixed; bottom:0px; right:5px; height: 60px;">
+        <a href="#" title="topo da pagina">
+            <img src="./imagens/up-arrow (1).png" border="0"></a>
+    </div>
+
+    <div class="container-a">
+        <div class="side">
+            <div class="noticiaside">
+                Noticias mais lidas
+            </div>
+            <div class="maisvistas">
+                <a href="">
+                    <div class="maisvistasnumero">1.</div>
+                </a>
+                <a href="">
+                    <div class="maisvistastitulo">Título da Notícia</div>
+                </a>
+            </div>
+            <div class="maisvistas">
+                <a href="">
+                    <div class="maisvistasnumero">2.</div>
+                </a>
+                <a href="">
+                    <div class="maisvistastitulo">Título da Notícia</div>
+                </a>
+            </div>
+            <div class="maisvistas">
+                <a href="">
+                    <div class="maisvistasnumero">3.</div>
+                </a>
+                <a href="">
+                    <div class="maisvistastitulo">Título da Notícia</div>
+                </a>
+            </div>
+            <div class="maisvistas">
+                <a href="">
+                    <div class="maisvistasnumero">4.</div>
+                </a>
+                <a href="">
+                    <div class="maisvistastitulo">Título da Notícia</div>
+                </a>
+            </div>
+            <div class="maisvistas">
+                <a href="">
+                    <div class="maisvistasnumero">5.</div>
+                </a>
+                <a href="">
+                    <div class="maisvistastitulo">Título da Notícia</div>
+                </a>
+            </div>
+            <div class="maisvistas">
+                <a href="">
+                    <div class="maisvistasnumero">6.</div>
+                </a>
+                <a href="">
+                    <div class="maisvistastitulo">Título da Notícia</div>
+                </a>
+            </div>
+        </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>

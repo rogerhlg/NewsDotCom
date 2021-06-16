@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    background-color: #B72E09;
+    Height: 100px;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 3%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.newsdotcon {
+    font-family: 'Monofett', cursive;
+    padding-left: 150px;
+    font-size: 60px;
+    color: #FCFBF2;
+}
+
+.menu {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FCFBF2;
+}
+
+.buscador {
+    background: #992404;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    width: 288px;
+    height: 38px;
+    padding-left: 9px;
+    color: #FCFBF2;
+    font-family: Monda;
+    font-size: 20px;
+}
+
+
+/* mudar a cor do placeholder da caixa de buscar */
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}

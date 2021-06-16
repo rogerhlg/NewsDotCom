@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    background-color: #B72E09;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.logo {
+    font-family: Monofett;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FCFBF2;
+}
+
+div.copyright {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}

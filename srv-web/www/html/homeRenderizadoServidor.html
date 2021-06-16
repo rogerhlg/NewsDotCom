@@ -1,0 +1,62 @@
+<h2><a href="">Adicione uma notícia</a></h2>
+<div class="container">
+    <div class="boxCovid">
+        <div class="covid">
+            <a href="./covid/covid/covid.html">
+                <div class="sessao">Sessão COVID-19 </div>
+            </a>
+            <a href="">
+                <div class="resumodia">Resumo do dia</div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container-b">
+        <article>
+            
+            <% let tam = noticias.length; for(let cont=0; cont<3; cont++ ){ %>
+                <% tam = tam-1 %> 
+                <div class="noticia">
+                    <a href="noticia/<%=tam%>"><img class="imgNoticiaHome" src="./img/noticias/imagens/<%= noticias[tam].imagem %>" alt=""></a>
+                    <div class="block">
+                        <a href="">
+                            <div class="categoriaId">
+                                <%= noticias[tam].categoriaId%>
+                            </div>
+                        </a>
+                        <a href="noticia/<%=tam%>">
+                            <div class="titulo">
+                                <%= noticias[tam].titulo %>
+                            </div>
+                        </a>
+                        <a href="noticia/<%=tam%>">
+                            <div class="resumo">
+                                <%= noticias[tam].resumo %>
+                            </div>
+                        </a>
+                        <div class="tempo"> <%= noticias[tam].data%> - <%=noticias[tam].autor%>></div>
+                    </div>
+                </div>
+                
+            <% } %>
+        </article>
+    </div>
+    <div class="container-a">
+        <div class="side">
+            <div class="noticiaside">
+                Noticias mais lidas
+            </div>
+            <% for(let cont=0; cont<3; cont++ ){ %>
+                <div class="maisvistas">
+                    <a href="noticia/<%=cont%>">
+                        <div class="maisvistasnumero"><%- cont + 1 %>.</div>
+                    </a>
+                    <a href="noticia/<%=cont%>">
+                        <div class="maisvistastitulo"><%= noticias[cont].titulo %></div>
+                    </a>
+                </div>
+            <%};%> 
+        </div>
+    </div>
+</div>

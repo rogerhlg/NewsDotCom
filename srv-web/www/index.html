@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" href="./css/noticia.css">
+        <link rel="stylesheet" href="./css/grid.css">
+        <link rel="stylesheet" href="./css/boxcovid.css">
+        <link rel="stylesheet" href="./css/maisvistas.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <title>NewsDotCom</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="menu">
+                <button class="menubtn">Menu</button>
+                    <div class="menu-content">
+                        <%- include ('../menu.ejs') -%>
+                    </div>
+                <a href id="menuCovid">| Covid</a>
+                <a href id="menuNoticias">| Noticias</a>
+            </div>
+            <h1> <a href="">NewsDotCom</a></h1>
+            <form action="">
+                <div class="paddingBuscador">
+                    <input class="buscador" type="text" name="text" placeholder="BUSCAR">
+                    <button type="submit" style="display: none;">Click</button>
+                </div>
+            </form>
+        </header>
+        <main></main>
+        <footer>
+            <div class="logo">NDC</div>
+            <div class="copyright">© Copyright 2021-2021 NewsDotCom Comunicação S.A.</div>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
