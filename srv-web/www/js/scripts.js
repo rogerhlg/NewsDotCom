@@ -1,12 +1,11 @@
 const main = document.querySelector('main');
 
-carregarHome();
 
 // Eventos onClick
 const cNoticia = document.querySelector('#menuNoticias');
 cNoticia.onclick = function(e) {
     e.preventDefault();
-    carregarConteudo("noticias");
+    carregarAllNoticias();
 }
 
 const cCovid = document.querySelector('#menuCovid');
@@ -18,18 +17,46 @@ cCovid.onclick = function(e) {
 
 //REQUISIÇÃO AJAX. feita assincrona
 async function carregarConteudo(content){
-    await fetch(`html/${content}.html`)
-    .then(res => res.text())
-    .then(html =>{
-        main.innerHTML = html;
-    });
+    if(content.indexOf("?") != -1){
+        console.log(content);
+        // await fetch(`html/${content}.html`)
+        await fetch(`html/noticiaDinamica.html`)
+        .then(res => res.text())
+        .then(html =>{
+            main.innerHTML = html;
+        });
+    }
+    else
+        await fetch(`html/${content}.html`)
+        .then(res => res.text())
+        .then(html =>{
+            main.innerHTML = html;
+        });
 }
+
+{/* <h2><a href="">Notícias</a></h2>
+
+<div class="sla">
+    <h3>Titulo da Notícia</h3>
+    <img class= "imagem" src="./img/alface.png">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Facere, consectetur! Officia eveniet atque dolorem facilis accusamus,
+         dolorum id molestias minus culpa iure totam porro consectetur. Commodi debitis sit animi aliquam?
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur molestiae alias cumque tempora nostrum, porro repellat nam numquam commodi similique iste ipsa impedit repellendus quibusdam inventore expedita ea quisquam.     
+</div>
+
+<section class="nome">
+    <pre>
+        Nome do escritor
+        Fonte
+    </pre> 
+</section> */}
 
 async function carregarHome(){
     await carregarConteudo("home");
     // const section = document.querySelector('section');
     // console.log(section);
-        fetch('http://localhost:8000/noticias')
+        await fetch('http://localhost:8000/noticias')
             .then(res => res.json())
             .then(noticias =>{
                 const img = document.querySelector("body > main > div > div.container-b > article > div:nth-child(1) > a > img");
@@ -42,31 +69,64 @@ async function carregarHome(){
                 resumo.textContent = noticias[0].resumo;
                 const data = document.querySelector("body > main > div > div.container-b > article > div:nth-child(1) > div > div");
                 data.textContent = noticias[0].data;
+                const noticia = document.querySelector("body > main > div > div.container-b > article > div:nth-child(1)")
+                noticia.toggleAttribute(noticias[0].id_ = `${noticias[0].id_}`);
             });
 }
+carregar();
+async function carregar(){
+    await carregarHome();
+    const cArtigo = document.getElementById('artigo');
+    console.log(cArtigo.attributes[2]['name']);
 
-async function carregarDados(){
-    // await fetch('http://localhost:8000/noticias')
-    //     .then(res => res.json())
-    //     .then(noticias =>{
-    //         const noticias1 = noticias;
-    //         return noticias1;
-    //     })
-    const response = await fetch('http://localhost:8000/noticias')
-    const noticias = await response.json();
-    console.log(noticias);
-    return noticias;
+    cArtigo.onclick = function() {
+        // e.preventDefault();
+        alert(this.attributes[2]['name']);
+        // carregarConteudo("covid/covid/covid");
+    }
 }
 
-// const dados = carregarDados();
-// console.log(dados);
 
-async function criarNoticia(noticias){
+// async function carregarDados(){
+//     await fetch('http://localhost:8000/noticias')
+//         .then(res => res.json())
+//         .then(noticias =>{
+//             criarNoticia(noticias);
+//         });
+//     // const response = await fetch('http://localhost:8000/noticias')
+//     // const noticias = await response.json();
+//     // console.log(noticias);
+//     // return noticias;
+// }
+
+// carregarDados();
+
+async function carregarAllNoticias(){
+    await fetch(`html/noticias.html`)
+    .then(res => res.text())
+    .then(html =>{
+        main.innerHTML = html;
+        const section = document.querySelector('section');
+        fetch('http://localhost:8000/noticias')
+            .then(res => res.json())
+            .then(noticias =>{
+                // console.log(noticias);
+                // criarNoticia(noticias);
+                noticias.forEach(noticiaDb => {
+                    const cardNoticia = criarNoticia(noticiaDb);
+                    section.appendChild(cardNoticia);
+                });
+            });
+    });
+}
+
+
+function criarNoticia(noticias){
     const divAll = document.createElement('div');
     divAll.classList.add('containerAll');
-
+    divAll.id = `${noticias.id_}`;
     const divContainerC = document.createElement('div');
-    divAll.classList.add('container-c');
+    divContainerC.classList.add('container-c');
 
     const article = document.createElement('article');
 
@@ -75,12 +135,12 @@ async function criarNoticia(noticias){
     divNoticia.classList.add('noticia');
 
     const ancoraNoticia = document.createElement('a');
-    ancoraNoticia.classList.add('noticia');
+    ancoraNoticia.classList.add('imgNoticiaAllNoticias');
 
 
     const imgNoticia = document.createElement('img');
     imgNoticia.classList.add('imgNoticiaHome');
-    imgNoticia.src = `./img/noticias/${noticias[0].imagem}`
+    imgNoticia.src = `./img/noticias/${noticias.imagem}`
 
     const divBlock = document.createElement('div');
     divBlock.classList.add('block');
@@ -89,25 +149,25 @@ async function criarNoticia(noticias){
 
     const divCategoria = document.createElement('div');
     divCategoria.classList.add('categoriaId');
-    divContainerC.innerHTML = noticias[0].categoriaId;
+    divCategoria.innerHTML = noticias.categoriaId;
 
     const ancoraTitulo = document.createElement('a');
 
     const divTitulo = document.createElement('div');
     divTitulo.classList.add('titulo');
-    divTitulo.innerHTML = noticias[0].titulo;
+    divTitulo.innerHTML = noticias.titulo;
 
 
     const ancoraResumo = document.createElement('a');
 
     const divResumo = document.createElement('div');
     divResumo.classList.add('resumo');
-    divResumo.innerHTML = noticias[0].resumo;
+    divResumo.innerHTML = noticias.resumo;
 
 
     const divTempo = document.createElement('div');
     divTempo.classList.add('tempo');
-    divTempo.innerHTML = noticias[0].divTempo;
+    divTempo.innerHTML = noticias.data;
 
 
     divAll.appendChild(divContainerC);
@@ -127,55 +187,13 @@ async function criarNoticia(noticias){
 
     divBlock.appendChild(divTempo);
 
+    divAll.addEventListener("click", function(){
+        listener(divAll);
+    }, false);
     return divAll;
 }
-/* 
-<div class="containerAll">
-    <div class="container-c">
-        <article>
-                <div class="noticia">
-                    <a href="noticia/"><img class="imgNoticiaHome" src="./img/noticias/imagens/" alt=""></a>
-                    <div class="block">
-                        <a href="">
-                            <div class="categoriaId">categoria</div>
-                        </a>
-                        <a href="noticia/">
-                            <div class="titulo">titulo</div>
-                        </a>
-                        <a href="noticia/">
-                            <div class="resumo">resumo</div>
-                        </a>
-                        <div class="tempo">há tantos dias</div>
-                    </div>
-                </div>
-        </article>
-    </div>
-</div> */
-
-{/* <div class="containerAll container-c">
-    <div>
-        <article>
-            <div class="noticia">
-                <a class="noticia"><img class="imgNoticiaHome" src="" alt=""></a>
-                <div class="block">
-                    <a>
-                        <div class="categoriaId">
-                        </div>
-                    </a>
-                    <a>
-                        <div class="titulo">
-                        </div>
-                    </a>
-                    <a>
-                        <div class="resumo">
-                        </div>
-                    </a>
-                    <div class="tempo">
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
-</div> */}
-
+function listener(divAll){
+    console.log(divAll.id);
+    carregarConteudo(`noticia/?id=${divAll.id}`);
+}
                                             

@@ -17,6 +17,14 @@
     padding-right: 10px;
 }
 
+.imgNoticiaAllNoticias{
+    height: 187px;
+    width: 253px;
+    padding-left: 2px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+}
+
 div.block {
     display: block;
 }
