@@ -197,31 +197,25 @@
             false
             );
         }
-        //CRIAÇÃO DA PARTE COM AS 3 NOTICIAS
+        //CRIAÇÃO DA PARTE DA BOX COVID
+
         // const divContainer = document.createElement('div');
         // divContainer.classList.add("container")
 
-        // const divBoxCovid = document.createElement('div');
-        // divBoxCovid.classList.add("boxCovid");
+        const divBoxCovid = document.createElement('div');
+        divBoxCovid.classList.add("boxCovid");
         
-        // const divCovid = document.createElement('div');
-        // divCovid.classList.add("covid");
+        const divCovid = document.createElement('div');
+        divCovid.classList.add("covid");
 
-        // const ancoraHref = document.createElement('a');
-        // ancoraHref.href = "./covid/covid/covid.html";
+        const ancoraHref = document.createElement('a');
+        ancoraHref.href = "./html/covid/covid/covid.html";
 
-        // const divSessao = document.createElement('div');
-        // divSessao.classList.add("sessao");
-        // divSessao.textContent = "Sessão COVID-19";
+        const divSessao = document.createElement('div');
+        divSessao.classList.add("sessao");
+        divSessao.textContent = "Sessão COVID-19";
 
         
-        // const divContainerB = document.createElement('div');
-        // divContainerB.classList.add("container-b");
-
-        // divContainer.appendChild(divBoxCovid);
-        // divBoxCovid.appendChild(divCovid);
-        // divCovid.appendChild(ancoraHref);
-        // ancoraHref.appendChild(divSessao);
 
 
         const divContainer = document.createElement('div');
@@ -277,6 +271,11 @@
         // divContainer.appendChild(divContainerMaisVista);
         // divContainerB.appendChild(article);
         divContainerA.appendChild(divSide);
+
+        divContainer.appendChild(divBoxCovid);
+        divBoxCovid.appendChild(divCovid);
+        divCovid.appendChild(ancoraHref);
+        ancoraHref.appendChild(divSessao);
 
         divContainer.appendChild(divContainerB);
         divContainer.appendChild(divContainerA);
