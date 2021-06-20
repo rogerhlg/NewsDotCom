@@ -29,6 +29,19 @@ h2 {
     color: #252928;
 }
 
+.sobre {
+    
+    background: rgb(174, 229, 236);
+    font-size: 48px;
+    font-style: oblique;
+    color: #252928;
+    margin-top: 20px;
+    margin-left: 5px;
+    display: block;
+
+    
+}
+
 .menu {
     font-style: normal;
     font-weight: normal;

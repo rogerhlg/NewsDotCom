@@ -1,0 +1,39 @@
+<h3>Editar notícia</h3>
+
+<div class="formularios">
+  <form id="frmNoticias" name="noticias">
+    <input id="id" name="id" type="hidden">
+    <div>
+        <label for="titulo">Titulo:</label>
+        <input  id="titulo" type="text"  name="titulo" maxlength="256">
+    </div>
+    <div>
+        <label: for="resumo">Resumo</label>
+        <input id="resumo" type="text" name="resumo" maxlength="512">
+    </div>
+    <div>
+        <label for="texto">Texto</label>
+        <input id="texto" type="text" name="texto" maxlength="32768">
+    </div>
+    <div>
+        <Data: for="data">Data</label><br>
+        <input type="date" name="data">
+    </div>
+    <div>
+        <label for="foto">Foto</label>
+        <img id="imgFoto" name="imgFoto" style="cursor:pointer" src="../../img/semfoto.png">
+        <input type="file" id="foto" name="foto" accept="image/*">
+    </div>
+    <div>
+      <label for="autor">Autor</label>
+      <input id="autor" type="text" name="autor" maxlength="128">
+    </div>
+    <div>
+      <label for="categoriaId">Categoria</label>
+      <input id="categoriaId" type="text" name="categoriaId" maxlength="128">
+    </div>
+    <label></label>
+    <input id="btnSalvar" type="button" value="Salvar">
+    <input id="btnCancelar" type="button" value="Cancelar">
+  </form>
+</div>

@@ -1,5 +1,6 @@
     const main = document.querySelector('main');
 
+  
 
     // Eventos onClick
     const cNoticia = document.querySelector('#menuNoticias');
@@ -12,6 +13,12 @@
     cCovid.onclick = function(e) {
         e.preventDefault();
         carregarConteudo("covid/covid/covid");
+    }
+
+    const cSobre = document.querySelector('#menuSobre');
+    cSobre.onclick = function(e) {
+        e.preventDefault();
+        carregarConteudo("sobre");
     }
 
     //REQUISIÇÃO AJAX. feita assincrona
@@ -360,3 +367,15 @@
     function listener(divAll){
         carregarConteudo(`noticia/?${divAll.id}`);
     }
+
+    async function carregarHtml(path, seletor){
+        const url = 'html/' + path + '.html';
+        await fetch(url)
+          .then(res => res.text())
+          .then(texto => {
+              const tag = document.querySelector(seletor);
+              tag.innerHTML = texto;
+            }
+          );
+      }
+      
