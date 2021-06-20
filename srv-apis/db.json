@@ -1,7 +1,7 @@
 {
     "noticias":[
         {
-            "id_": "rodovia",
+            "id": "rodovia",
             "titulo": "Rodovia de US$ 1 bilhão não leva a lugar nenhum em Montenegro (e pode quebrar o país europeu)",
             "resumo": "Pequena nação nos Bálcãs, que tenta entrar na União Europeia, pegou empréstimo da China e ainda não concluiu trecho de apenas 41 km. Conselho Europeu alerta para 'armadilha da dívida'.",
             "texto": 
@@ -12,7 +12,7 @@
             "categoriaId": "Economia"
         },
         {
-            "id_": "praiaSri",
+            "id": "praiaSri",
             "titulo": "Praias do Sri Lanka estão ameaçadas pela maior catástrofe ambiental de sua história",
             "resumo": "Um navio com bandeira de Singapura está em chamas há nove dias perto da costa de Sri Lanka. Uma parte da carga já caiu no mar e apareceu nas praias próximas, mas o grande risco é a possibilidade da embarcação se romper, despejando todo o conteúdo no mar.",
             "texto": 
@@ -23,7 +23,7 @@
             "categoriaId": "Ambiental"
         },
         {
-            "id_": "5G",
+            "id": "5G",
             "titulo": "Edital do 5G prevê internet móvel de alta velocidade em 27 mil km de rodovias federais",
             "resumo": "Cobertura móvel de estradas é uma das obrigações previstas na minuta de edital, aprovada pela Anatel e em avaliação pelo TCU. Entidades do setor cobram informações mais detalhadas.",
             "texto": 
@@ -35,7 +35,7 @@
         },
         
         {
-            "id_": "profCeara",
+            "id": "profCeara",
             "titulo": "Professora pedala pelo sertão do Ceará com 'educação delivery' para crianças com deficiência",
             "resumo": "Com sucesso das aulas, moradores do entorno começaram a pedir para participar das atividades propostas por Noadias Novaes. Já são quase 30 estudantes ‘adotados’ por ela ao longo da pandemia.",
             "texto": 
@@ -47,7 +47,7 @@
         },
         
         {
-            "id_": "boletFiocruz",
+            "id": "boletFiocruz",
             "titulo": "Em novo boletim, Fiocruz alerta que ”normalidade” acelera terceira onda",
             "resumo": "Com a normalização da mobilidade diante de números ainda muito altos de casos e mortes, o novo coronavírus voltou a circular com intensidade.",
             "texto": 
@@ -59,7 +59,7 @@
         },
         
         {
-            "id_": "apagao",
+            "id": "apagao",
             "titulo": "Falta de chuvas e investimentos traz risco de novo apagão no Brasil",
             "resumo": "Estiagem se agrava, e governo emite alerta de emergência hídrica para cinco estados que concentram a maior parte da geração hidrelétrica do Brasil.",
             "texto": 
@@ -71,7 +71,7 @@
         },
         
         {
-            "id_": "bandaLarga",
+            "id": "bandaLarga",
             "titulo": "Senado aprova MP que reduz taxa sobre serviços via satélite para baratear banda larga",
             "resumo": "Proposta foi alterada pelos senadores e deverá ser novamente analisada pela Câmara. MP está em vigor desde 2020 e precisa ser aprovada até o próximo dia 30 para não perder validade.",
             "texto": 
@@ -83,7 +83,7 @@
         },
         
         {
-            "id_": "virusMacOS",
+            "id": "virusMacOS",
             "titulo": "Atualização do macOS corrige falha usada por vírus para capturar tela do usuário sem permissão",
             "resumo": "Brecha estava sendo explorada por vírus que ataca projetos do Xcode e rouba dados do navegador web. Executivo declarou que situação de malware no macOS é 'inaceitável' para a Apple.",
             "texto": 
@@ -95,7 +95,7 @@
         },
         
         {
-            "id_": "abusoGoogle",
+            "id": "abusoGoogle",
             "titulo": "Alemanha investiga se Google abusa de posição dominante ao tratar dados de usuários",
             "resumo": "Órgão antitruste do país vai examinar se usuários têm escolha suficiente sobre suas informações ao utilizarem serviços da empresa.",
             "texto": 
@@ -107,7 +107,7 @@
         },
         
         {
-            "id_": "AmazonIleg",
+            "id": "AmazonIleg",
             "titulo": "Amazon é alvo de processo na capital dos EUA por elevar preços 'ilegalmente'",
             "resumo": "Procurador-geral de Washington abriu ação antitruste afirmando que a companhia usou técnicas para manter monopólio.",
             "texto": 
@@ -119,7 +119,7 @@
         },
         
         {
-            "id_": "senhaF",
+            "id": "senhaF",
             "titulo": "Entenda por que senhas fortes e a autenticação em duas etapas não protegem contra a 'raspagem de dados'",
             "resumo": "Mecanismos que melhoram a segurança da sua conta podem ajudar a proteger dados de visualização restrita dos seus amigos, mas raspagem pode ser realizada em dados públicos. Saiba o que você pode fazer.",
             "texto": 
@@ -131,7 +131,7 @@
         },
         
         {
-            "id_": "Aneel",
+            "id": "Aneel",
             "titulo": "Com baixo nível de reservatórios, Aneel decide que conta de luz ficará mais cara em junho",
             "resumo": "Nível dos reservatórios das principais hidrelétricas é o mais baixo desde 2015 e exige maior uso de termelétricas, encarecendo conta de luz. Bandeira tarifária ficará na cor vermelha patamar 2.",
             "texto": 
@@ -143,7 +143,7 @@
         },
         
         {
-            "id_": "Paraisopolis",
+            "id": "Paraisopolis",
             "titulo": "Projeto de Paraisópolis que confeccionou vestido da 2ª colocada no Miss Universo já capacitou 250 mulheres em 4 anos",
             "resumo": "Após denúncia de violência doméstica, o Costurando Sonhos Brasil surgiu para oferecer formação e autonomia financeira a mulheres da comunidade.",
             "texto": 
@@ -155,7 +155,7 @@
         },
         
         {
-            "id_": "fosseis",
+            "id": "fosseis",
             "titulo": "Cinco fósseis são recolhidos em fiscalização policial no Cariri do Ceará",
             "resumo": "Os fósseis recolhidos foram repassados ao Laboratório de Paleontologia da Universidade Regional do Cariri.",
             "texto": 
@@ -167,7 +167,7 @@
         },
         
         {
-            "id_": "restosEsc",
+            "id": "restosEsc",
             "titulo": "Restos mortais de 215 crianças são encontrados em escola para indígenas no Canadá",
             "resumo": "A vala comum foi encontrada durante pesquisa em uma antiga escola residencial para indígenas do país.",
             "texto": 
@@ -179,7 +179,7 @@
         },
         
         {
-            "id_": "abordCic",
+            "id": "abordCic",
             "titulo": "Abordagem de policiais a ciclista que fazia manobras em praça de Cidade Ocidental repercute nas redes sociais",
             "resumo": "Ministério Público informou que está apurando o que aconteceu. Polícia Militar disse que também está verificando os fatos para se posicionar sobre o caso.",
             "texto": 
@@ -190,7 +190,7 @@
             "categoriaId": "Segurança"
         },
         {
-            "id_": "concPub",
+            "id": "concPub",
             "titulo": "Autorizada primeira convocação dos candidatos aprovados no último concurso público da Barra dos Coqueiros",
             "resumo": "Serão convocados 81 aprovados, divididos em 14 cargos diferentes.",
             "texto": 
@@ -202,7 +202,7 @@
         },
         
         {
-            "id_": "recuperacao",
+            "id": "recuperacao",
             "titulo": "Prefeitura de Mogi e Comphap fazem vistoria no Casarão dos Duque para planejar estratégia de recuperação",
             "resumo": "Decisão judicial garante à administração municipal o direito de recuperar a estrutura ao custeio da empresa dona da área. Em nota, empresa informou que apresentou recurso da decisão.",
             "texto": 
@@ -214,7 +214,7 @@
         },
         
         {
-            "id_": "vestibUEL",
+            "id": "vestibUEL",
             "titulo": "Vestibular UEL: saiba argumentar para receber uma boa nota na redação",
             "resumo": "Vestibular da Universidade Estadual de Londrina será realizado no domingo (30).",
             "texto": 
@@ -226,7 +226,7 @@
         },
         
         {
-            "id_": "casamCovid",
+            "id": "casamCovid",
             "titulo": "Após sair da UTI Covid, mulher é pedida em casamento na porta de hospital de Curitiba",
             "resumo": "Namorado estendeu faixa e fez pedido, de joelhos; ele disse que o susto com a doença mostrou o quanto ele a ama e, por isso, não quis perder tempo. O casal já marcou a data da cerimônia.",
             "texto": 
@@ -238,7 +238,7 @@
         },
         
         {
-            "id_": "refPonte",
+            "id": "refPonte",
             "titulo": "São Vicente assina contrato com empresa responsável pela reforma da Ponte dos Barreiros",
             "resumo": "Assinatura do contrato ocorreu na manhã deste sábado (29). Obra da Fase 2 custará R$ 33.720.317,64.",
             "texto": 
@@ -250,7 +250,7 @@
         },
         
         {
-            "id_": "motAtrop",
+            "id": "motAtrop",
             "titulo": "Após bater em mureta, motorista é atropelado na Avenida do Contorno, em Belo Horizonte",
             "resumo": "Homem foi levado em estado gravíssimo para o Hospital de Pronto-Socorro João XXIII.",
             "texto": 
@@ -262,7 +262,7 @@
         },
         
         {
-            "id_": "dicaIncend",
+            "id": "dicaIncend",
             "titulo": "Capitão do Corpo de Bombeiros de Tatuí dá dicas de cuidados para evitar incêndios domésticos no frio",
             "resumo": "Segundo o capitão Gustavo Luíz Maragon Fulas, o primeiro passo é não deixar aquecedores em cômodos com crianças sem algum adulto por perto.",
             "texto": 
@@ -274,7 +274,7 @@
         },
         
         {
-            "id_": "indiaCorona",
+            "id": "indiaCorona",
             "titulo": "Índia pede para redes sociais removerem referências à 'variante indiana' do coronavírus",
             "resumo": "Ministério de Tecnologia da Informação do país alegou que o termo não é usado pela OMS para tratar da cepa B.1.617.",
             "texto": 
@@ -286,7 +286,7 @@
         },
         
         {
-            "id_": "gargVac",
+            "id": "gargVac",
             "titulo": "Vacinação tem disparidade de mais de 100% entre os estados brasileiros; entenda os gargalos",
             "resumo": "Estados do Norte estão entre os mais atrasados na vacinação e os que menos aplicaram as doses recebidas. Dificuldades logísticas, rejeição à vacina, falta de campanha adequada e falhas no preenchimento do sistema estão entre as causas.",
             "texto": 
@@ -298,7 +298,7 @@
         },
         
         {
-            "id_": "cpiFakeNCovid",
+            "id": "cpiFakeNCovid",
             "titulo": "Além de 'gabinete paralelo', CPI quer apurar se empresário Wizard financiou fake news sobre Covid",
             "resumo": "Ex-proprietário de rede de escolas de inglês atuou como assessor informal do ex-ministro da Saúde Eduardo Pazuello. Depoimento dele está marcado para o próximo dia 17.",
             "texto": 
@@ -310,7 +310,7 @@
         },
         
         {
-            "id_": "notaFalsa",
+            "id": "notaFalsa",
             "titulo": "Mulher usa nota falsa de R$ 100 para comprar trufas de menino que vende doces em semáforo",
             "resumo": "Segundo a mãe, o filho de 13 anos costuma vender doces para ter renda extra e perdeu a mercadoria nesta semana para uma motorista que deu a nota falsa, em Jundiaí.",
             "texto": 
@@ -322,7 +322,7 @@
         },
         
         {
-            "id_": "alertaIncend",
+            "id": "alertaIncend",
             "titulo": "Incêndios no Pantanal e Amazônia poderão ser piores em 2021, alertam cientistas",
             "resumo": "Seca mais severa, aumento do desmatamento e enfraquecimento da fiscalização ambiental no governo Bolsonaro apontam para um período de queimadas mais grave que o já observado em 2020.",
             "texto": 
@@ -334,7 +334,7 @@
         },
         
         {
-            "id_": "infestRato",
+            "id": "infestRato",
             "titulo": "Por que Austrália vive infestação assustadora de ratos",
             "resumo": "Fazendas no sudeste da Austrália estão sofrendo com uma infestação de ratos quase impossível de ser controlada, que afetou a economia e a saúde de muitos residentes.",
             "texto": 
